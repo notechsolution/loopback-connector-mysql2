@@ -383,7 +383,6 @@ describe('migrations', function() {
         now.setSeconds(0);
         found.dateTime.setSeconds(0);
         found.timestamp.setSeconds(0);
-
         assert.equal(found.dateTime.toGMTString(), now.toGMTString());
         assert.equal(found.timestamp.toGMTString(), now.toGMTString());
         assert.equal(found.isAdmin, '0');
@@ -485,9 +484,9 @@ describe('migrations', function() {
     function(err, ret) {
       should.not.exists(err);
       DateData.findById(ret.insertId, function(err, dateData) {
-        should(dateData.dateTime)
+        should(dateData.dateTime.toJSON())
           .be.null();
-        should(dateData.timestamp)
+        should(dateData.timestamp.toJSON())
           .be.null();
         done();
       });

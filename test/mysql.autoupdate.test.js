@@ -452,7 +452,7 @@ describe('MySQL connector', function() {
         },
       },
     };
-
+    // process.env.MYSQL_DATABASE || 'myapp_test'
     const foreignKeySelect =
       'SELECT COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME, REFERENCED_COLUMN_NAME ' +
       'FROM   INFORMATION_SCHEMA.KEY_COLUMN_USAGE ' +

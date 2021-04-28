@@ -200,7 +200,7 @@ function query(sql, cb) {
 function generateURL(config) {
   const urlObj = {
     protocol: 'mysql',
-    auth: config.username || '',
+    auth: config.username || config.user || '',
     hostname: config.host,
     pathname: config.database,
     slashes: true,

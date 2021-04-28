@@ -1,3 +1,8 @@
+2021-04-28, Version 6.1.0
+=========================
+
+ * change the driver from mysql to mysql2 (Lames Zeng)
+
 2020-09-01, Version 6.0.0
 =========================
 

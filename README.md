@@ -887,6 +887,7 @@ For the above example, the model definition is as follows:
 
 ## Running tests
 
+>> DO Remember to set the OS Timezone as UTC for the MYSQL DB and Unittest running environment. And DO NOT pass the MYSQL_DATABASE
 ### Own instance
 
 If you have a local or remote MySQL instance and would like to use that to run

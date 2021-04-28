@@ -1,7 +1,7 @@
 {
-  "name": "loopback-connector-mysql",
+  "name": "loopback-connector-mysql2",
   "version": "6.0.0",
-  "description": "MySQL connector for loopback-datasource-juggler",
+  "description": "MySQL connector for loopback-datasource-juggler. Using mysql2 instead of mysqljs",
   "engines": {
     "node": ">=10"
   },
@@ -9,7 +9,7 @@
   "scripts": {
     "pretest": "node pretest.js",
     "lint": "eslint .",
-    "test": "mocha test/*.test.js node_modules/juggler-v3/test.js node_modules/juggler-v4/test.js",
+    "test": "mocha node_modules/juggler-v3/test.js node_modules/juggler-v4/test.js test/*.test.js",
     "posttest": "npm run lint"
   },
   "files": [
@@ -25,6 +25,7 @@
     "lodash": "^4.17.11",
     "loopback-connector": "^5.0.0",
     "mysql": "^2.11.1",
+    "mysql2": "^2.2.5",
     "strong-globalize": "^6.0.4"
   },
   "devDependencies": {
@@ -40,8 +41,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/strongloop/loopback-connector-mysql.git"
+    "url": "https://github.com/notechsolution/loopback-connector-mysql2.git"
   },
   "license": "MIT",
-  "author": "IBM Corp."
+  "author": "Lames Zeng"
 }
